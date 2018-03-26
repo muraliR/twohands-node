@@ -72,7 +72,7 @@ var update_user_data = {
 }
 
 var user = client.User();
-user.new_user(update_user_data)
+user.create(update_user_data)
 
 
 var update_event_data = {
@@ -89,5 +89,5 @@ var update_event_data = {
 };
 
 var event = client.Event();
-event.new_event(update_event_data);
+event.create(update_event_data);
 
