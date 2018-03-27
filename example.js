@@ -61,7 +61,7 @@ const TwohandsClient = require('./'); // require the `index.js` file from the sa
 
 var client = new TwohandsClient({api_token: '28eaa915b3c5848cfa8b2d2c8e4a96ee3d16d8c2'});
 
-var update_user_data = {
+var user_data = {
 	"email": "bramu.ss@gmail.com",
 	"data": {
 		"first_name": "Tharaka",
@@ -72,10 +72,10 @@ var update_user_data = {
 }
 
 var user = client.User();
-user.create(update_user_data)
+user.create(user_data)
 
 
-var update_event_data = {
+var event_data = {
 	"user": {
 		"email": "bramu.ss@gmail.com"	
 	},
@@ -89,5 +89,5 @@ var update_event_data = {
 };
 
 var event = client.Event();
-event.create(update_event_data);
+event.create(event_data);
 
